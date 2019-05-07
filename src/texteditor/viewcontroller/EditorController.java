@@ -42,7 +42,7 @@ public class EditorController implements ChangeViewStateCallback {
             if (!isSaved.get()) {
                 Task<Void> task = new Task<>() {
                     @Override
-                    protected Void call() throws Exception {
+                    protected Void call() {
                         saveAfterTextChange(observable);
                         return null;
                     }
@@ -110,11 +110,6 @@ public class EditorController implements ChangeViewStateCallback {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    @FXML
-    public void onClose() {
-        handleCloseButton(null);
     }
 
     @Override

@@ -15,7 +15,6 @@
                <MenuItem onAction="#onOpen" text="Open"/>
                <MenuItem onAction="#onSave" text="Save"/>
                <MenuItem onAction="#onSaveAs" text="SaveAs..."/>
-               <MenuItem onAction="#onClose" text="Close"/>
            </Menu>
        </MenuBar>
    </top>
